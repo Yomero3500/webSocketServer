@@ -25,6 +25,7 @@ ServerSI.on("connection", (socket) => {
 
   socket.on("newClient", (message) => {
     ServerSI.emit("newClient", message);
+    console.log(message);
   });
 
   socket.on("disconnect", () => {
